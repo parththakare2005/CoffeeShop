@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+
+body{
+    background: #ebe5d3;
+    color: #3d2a1e;
+}
+/* Navbar */
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.logo h2{
+    color:#4b1d0f;
+    padding:20px 0;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    list-style:none;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#8b5e3c;
+}
+
+
+/* Hero Section */
+.hero{
+    text-align: center;
+    padding: 60px 20px;
+    background:url('https://images.unsplash.com/photo-1601205741712-b261aff33a7d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2hvcCUyMGNhZmV8ZW58MHx8MHx8fDA%3Dhttps://plus.unsplash.com/premium_photo-1664970900025-1e3099ca757a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FmZXxlbnwwfHwwfHx8MA%3D%3D')
+    center/cover no-repeat;
+    text-align:center;
+    color:white;
+    padding:120px 20px;
+    border-radius:12px;
+    margin-top:20px;
+}
+
+.hero h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #6a6258;
+    max-width: 600px;
+    margin: auto;
+}
+/* Menu */
+.menu{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin:60px auto;
+}
+
+.menu-card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-5px);
+}
+
+.menu-card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    text-align:center;
+    padding:15px;
+}
+/* Menu Section */
+.menu{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 30px;
+}
+
+/* Card */
+.menu-card{
+    background: #ebe5d3;
+    border-radius: 0 0 20px 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.menu-card:hover{
+    transform: translateY(-5px);
+}
+
+/* Image */
+.menu-card img{
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Content */
+.menu-card h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 15px 10px;
+    color: #2b1d14;
+}
+
+.menu-card p{
+    font-size: 14px;
+    color: #6b6257;
+    margin: 0 15px 20px;
+    line-height: 1.6;
+}
+
+/* Price Badge */
+.price{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: #3b1f16;
+    color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+.image-box{
+    position: relative;
+}
+
+/* Button */
+.menu-card button{
+    width: calc(100% - 30px);
+    margin: 0 15px 15px;
+    padding: 12px;
+    border: 1px solid #6b5a48;
+    border-radius: 12px;
+    background: transparent;
+    color: #3b1f16;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-card button:hover{
+    background: #3b1f16;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.logo button {
+    border: 1px solid #6b5a48;
+    border-radius: 12px;
+    background: transparent;
+    color: #3b1f16;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 10px 20px;
+
+    margin-left: 0;
+}
+/* Mobile */
+@media(max-width:768px){
+    .menu{
+        grid-template-columns: 1fr;
+    }
+
+    .menu-card h3{
+        font-size: 24px;
+    }
+}
+
+
+/* Footer */
+footer{
+    background: #2a0f0f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 50px 10%;
+}
+
+.footer-content,
+.footer-section{
+    flex: 1;
+    min-width: 220px;
+}
+
+footer h3{
+    margin-bottom: 15px;
+}
+
+footer p{
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.footer-section input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.footer-section button{
+    padding: 10px 20px;
+    border: none;
+    background: #c69c6d;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section button:hover{
+    background: #b5895a;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+
+    .hero h1{
+        font-size: 35px;
+    }
+
+    .booking-section{
+        flex-direction: column;
+    }
+
+    .form-row{
+        flex-direction: column;
+    }
+
+    .Navigations ul{
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn {
+    margin-top: 8px;
+}
+
+.btn1{
+    
+}
